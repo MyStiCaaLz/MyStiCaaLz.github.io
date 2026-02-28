@@ -19,11 +19,10 @@ body {
     line-height: 1.5;
 }
 
-/* Custom Cursor (Uniquement sur desktop, ignoré sur mobile) */
-* {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 2l12 11.2l-5.8 0.5l3.3 6.4l-3 1.4l-3.2-6.4l-3.3 2.9z" fill="white" stroke="black" stroke-width="1.5" stroke-linejoin="round"/></svg>'), auto;
-}
 
+* {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21L4 4l17 7l-6.265 2.685a2 2 0 0 0-1.05 1.05L11 21Z"/></svg>'), auto;
+}
 #matrix-bg {
     position: fixed;
     top: 0; left: 0;
@@ -74,7 +73,7 @@ h1 {
     letter-spacing: 2px;
     margin-bottom: 1rem;
     text-shadow: 0 0 10px var(--terminal-dim);
-    word-break: break-word; /* Évite que le texte ne dépasse sur mobile */
+    word-break: break-word; 
 }
 
 .subtitle {
@@ -221,38 +220,35 @@ footer { margin-top: 4rem; text-align: center; color: var(--terminal-dim); font-
     margin-bottom: 5px;
 }
 
-/* =========================================================
-   MEDIA QUERIES - GESTION DE LA RESPONSIVITÉ
-   ========================================================= */
 
-/* Pour les tablettes et petits écrans (max 768px) */
+
 @media screen and (max-width: 768px) {
     .container {
-        padding: 2rem 1rem; /* Réduit les marges latérales */
+        padding: 2rem 1rem; 
     }
 
     h1 {
-        font-size: 2rem; /* Titre plus petit */
+        font-size: 2rem; 
     }
 
     .glitch-header {
-        font-size: 1.5rem; /* Sous-titres plus petits */
+        font-size: 1.5rem;
     }
 
     .nav-bar {
-        flex-wrap: wrap; /* Permet au menu de passer à la ligne */
+        flex-wrap: wrap; 
         gap: 10px;
         justify-content: flex-start;
     }
 
     .profil-container {
-        flex-direction: column; /* L'image passe au-dessus du texte */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
     
     .profil-side-text p {
-        text-align: justify; /* Garde le texte propre malgré le centrage */
+        text-align: justify; 
     }
     
     .data-box ul {
@@ -260,7 +256,7 @@ footer { margin-top: 4rem; text-align: center; color: var(--terminal-dim); font-
         text-align: left;
     }
 
-    /* Ajustement du gros bouton GitHub pour qu'il ne casse pas l'écran */
+ 
     #github a.terminal-link {
         font-size: 1rem !important;
         display: block;
@@ -270,7 +266,7 @@ footer { margin-top: 4rem; text-align: center; color: var(--terminal-dim); font-
     }
 }
 
-/* Pour les smartphones (max 480px) */
+
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
@@ -281,16 +277,47 @@ footer { margin-top: 4rem; text-align: center; color: var(--terminal-dim); font-
     }
 
     .data-box {
-        padding: 1rem; /* Moins d'espace perdu à l'intérieur des blocs */
+        padding: 1rem; 
     }
 
     #boot-screen {
         padding: 1rem;
-        font-size: 0.9rem; /* Évite que les logs ne soient tronqués */
+        font-size: 0.9rem; 
     }
     
     a.terminal-link {
         font-size: 0.9rem;
         padding: 5px;
     }
+}
+
+.profil-side-text a {
+    text-decoration: none; 
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+.profil-side-text a::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    bottom: -2px; 
+    left: 0;
+    background-color: #00d1ff; 
+    transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    box-shadow: 0 0 8px #00d1ff; 
+}
+
+
+.profil-side-text a:hover {
+    color: #00d1ff !important; 
+    text-shadow: 0 0 8px rgba(0, 209, 255, 0.6); 
+}
+
+
+.profil-side-text a:hover::after {
+    width: 100%;
 }
