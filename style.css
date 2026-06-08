@@ -9,6 +9,7 @@
             --purple: #b060ff;
             --purple-dim: rgba(176,96,255,0.3);
             --red: #ff2244;
+            --yellow: #ffd322;
             --white: #e8f0e8;
             --dim: rgba(200, 230, 200, 0.766);
             --font-mono: 'Share Tech Mono', monospace;
@@ -405,6 +406,7 @@
         .ops-card.thm::before { background: var(--green); }
         .ops-card.htb::before { background: var(--cyan); }
         .ops-card.vulnhub::before { background: var(--red); }
+        .ops-card.pwn::before { background: var(--yellow); }
 
         .ops-card:hover {
             border-color: rgba(0,255,65,0.4);
@@ -431,7 +433,7 @@
         .status-active .status-dot { background: var(--green); box-shadow: 0 0 6px var(--green); }
         .status-engaged .status-dot { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
         .status-pwned .status-dot { background: var(--red); box-shadow: 0 0 6px var(--red); }
-
+ .status-pwn .status-dot { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
         .ops-title {
             font-family: var(--font-body);
             font-size: 1.1rem;
@@ -743,4 +745,84 @@
         }
         * {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21L4 4l17 7l-6.265 2.685a2 2 0 0 0-1.05 1.05L11 21Z"/></svg>'), auto;
+}
+
+
+.progress-item {
+    margin: 6px 0;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    color: rgba(200,230,200,0.7);
+}
+
+.progress-label span:last-child {
+    color: var(--yellow);
+}
+
+.progress-bar-bg {
+    height: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 1.2s ease;
+}
+
+.fill-complete { 
+    background: var(--yellow); /* ou ta couleur verte */
+    box-shadow: 0 0 8px var(--green);
+}
+
+.fill-progress { 
+    background: var(--yellow);
+    box-shadow: 0 0 8px var(--yellow);
+    animation: progress-pulse 2s infinite;
+}
+
+@keyframes progress-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.cv-download-btn {
+      display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            border: 1px solid rgba(200,230,200,0.2);
+            padding: 2px 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            margin-left: 8px;
+}
+
+
+.cv-download-btn:hover {
+ border-color: var(--green); color: var(--green);
+}
+
+.cv-download-btn span,
+.cv-download-btn .cv-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.cv-icon {
+    font-size: 1rem;
+    animation: bounce-down 1.5s infinite;
+}
+
+@keyframes bounce-down {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(3px); }
 }
