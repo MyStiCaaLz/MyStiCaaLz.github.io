@@ -11,7 +11,7 @@
             --red: #ff2244;
             --yellow: #ffd322;
             --white: #e8f0e8;
-            --dim: rgba(200, 230, 200, 0.766);
+            --dim: rgba(255, 255, 255, 0.947);
             --font-mono: 'Share Tech Mono', monospace;
             --font-display: 'Orbitron', monospace;
             --font-body: 'Rajdhani', sans-serif;
@@ -235,7 +235,7 @@
        
         section {
             padding: 4rem 5vw;
-            border-bottom: 1px solid rgba(0,255,65,0.06);
+            border-bottom: 1px solid rgba(0, 255, 64, 0.05);
         }
 
         .section-label {
@@ -280,7 +280,7 @@
 
         .section-id {
             font-size: 0.7rem;
-            color: rgba(0,255,65,0.25);
+            color: rgba(0, 255, 64, 0.893);
             letter-spacing: 3px;
         }
 
@@ -328,7 +328,7 @@
             font-family: var(--font-body);
             font-size: 1.05rem;
             font-weight: 400;
-            color: rgba(200,230,200,0.8);
+            color: rgba(253, 255, 253, 0.876);
             line-height: 1.7;
             margin-bottom: 1rem;
             
@@ -454,7 +454,7 @@
         .skill-list li {
             font-family: var(--font-body);
             font-size: 0.9rem;
-            color: rgba(200,230,200,0.7);
+            color: rgba(245, 250, 245, 0.7);
             padding: 3px 0;
             padding-left: 16px;
             position: relative;
@@ -512,7 +512,7 @@
         .cert-desc {
             font-family: var(--font-body);
             font-size: 0.85rem;
-            color: rgba(200,230,200,0.6);
+            color: rgb(245, 248, 245);
             line-height: 1.5;
         }
 
@@ -555,7 +555,7 @@
         }
 
         .project-card:hover {
-            border-color: rgba(0,212,255,0.4);
+            border-color: rgba(0, 213, 255, 0.83);
             transform: translateY(-4px);
             box-shadow: 0 16px 50px rgba(0,0,0,0.6);
         }
@@ -579,7 +579,7 @@
         .project-desc {
             font-family: var(--font-body);
             font-size: 0.9rem;
-            color: rgba(200,230,200,0.65);
+            color: rgb(245, 248, 245);
             line-height: 1.6;
             margin-bottom: 1rem;
         }
@@ -666,7 +666,7 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.75rem;
-            color: rgba(0,255,65,0.25);
+            color: rgb(0, 255, 64);
             border-top: 1px solid rgba(0,255,65,0.06);
             flex-wrap: wrap;
             gap: 1rem;
