@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>MyS_tiCaaLz | Cybersecurity Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500;800;1000&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,16 +38,16 @@
         </div>
         <h1><span id="typewriter-title"></span><span class="cursor"></span></h1>
         <div class="subtitle-line">
-            <span class="badge badge-green">Cybersecurity Engineering student</span>
-            <span class="badge badge-cyan">Networking | Linux Administration | Programming</span>
+            <span class="badge badge-green">Cybersecurity Engineering student </span>
+            <span class="badge badge-cyan">Networking | Linux Administration | Programming </span>
             <span class="badge badge-purple">Low-Level Security & Purple Teaming Enthusiast</span>
         </div>
         <nav>
             <a href="#profil" class="nav-link">01 WHOAMI</a>
             <a href="#ops" class="nav-link">02 LABS & TRAINING</a>
-            <a href="#certifications" class="nav-link">03 CERTS</a>
+            <a href="#certifications" class="nav-link">03 CERTS & ACHS</a>
             <a href="#projects" class="nav-link">04 PROJECTS</a>
-            <a href="#github" class="nav-link">05 GITHUB</a>
+            <a href="#stack" class="nav-link">05 Sec Stack</a>
         </nav>
     </header>
 
@@ -62,19 +63,19 @@
                     <img src="1.jpg" alt="Moïse Maman Aboubakar" class="profile-img">
                 </div>
                 <div class="profile-text">
-                    <p>"Hello Hacker" ! Moi c'est <strong>Moïse Maman Aboubakar</strong>, actuellement en 2ème année de cycle d'ingénieur 
+                    <p>"Hello Hacker" ! Moi c'est <strong>Moïse Maman Aboubakar</strong>, actuellement en 3ème année de cycle d'ingénieur 
                         en Sécurité Information Technologie, j'essaye de développer une expertise hybride alliant 
                         sécurité <span class="highlight-red">offensive</span> et <span class="highlight-cyan">défensive</span> 
-                        des systèmes. Passionné par l’écosystème Linux et les réseaux, je consacre mon temps libre à relever les défis
-                         pour maîtriser le reverse engineering ainsi que le binary exploitation et l'administration système et réseaux avancée. 
+                        des systèmes. Je m'interesse à l'administration système et réseaux sous linux, la programmation en python, le bash scripting et les réseaux, je consacre mon temps libre à relever les défis
+                         pour maîtriser le reverse engineering ainsi que le binary exploitation. 
                          Mon objectif est de devenir un profil Purple Team, capable de comprendre l'attaque pour mieux bâtir la défense.
                           Je suis actuellement à la recherche d'un stage de PFE de 4 à 6 mois pour mettre mes compétences au service 
                           d'une équipe innovante et en apprendre d'avantage.
                   </p>
-                    <div class="philosophy">"With great power comes great responsibility."</div>
+                    <div class="philosophy">"With great power comes great responsibility." <i class="fa-brands fa-linux"></i></div>
                     <div class="contact-grid">
                         <div class="contact-item">
-                            <span class="contact-label">⬡ EMAIL</span>
+                            <span class="contact-label"><i class="fa-solid fa-envelope"></i> EMAIL</span>
                             <span class="contact-val">
                                 <a href="mailto:moisemamanaboubakar@gmail.com">moisemamanaboubakar@gmail.com</a>
                                 <a href="#" id="copy-key-btn" data-key="-----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -133,23 +134,72 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                             </span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">⬡ LINKEDIN</span>
+                            <span class="contact-label"><i class="fa-brands fa-linkedin"></i> LINKEDIN</span>
                             <span class="contact-val"><a href="https://www.linkedin.com/in/moïse-maman-aboubakar-432758275" target="_blank">Moïse Maman Aboubakar</a></span>
                         </div>
                         <div class="contact-item">
-    <span class="contact-label">⬡ CV</span>
-    <span class="contact-val">
-        <a href="CV_Maman_Aboubakar_Moïse.pdf" download="CV_Maman_Aboubakar_Moïse" class="cv-download-btn" style="color: var(--green);">
-            Télécharger mon CV
-            <span class="cv-icon">↓</span>
-        </a>
-    </span>
+    <span class="contact-label"><i class="fa-solid fa-file"></i> CV</span>
+<span class="contact-val cv-dropdown">
+  <button type="button" class="cv-download-btn" style="color: var(--green);background-color: transparent; font-weight: 700;" onclick="this.nextElementSibling.classList.toggle('open')">
+    Télécharger mon CV <span class="cv-icon">↓</span>
+  </button>
+  <div class="cv-menu">
+    <a href="CV_Maman_Aboubakar_Moïse.pdf" download="CV_Maman_Aboubakar_Moïse.pdf">Français</a>
+    <a href="CV_Maman_Aboubakar_Moïse_en.pdf" download="CV_Maman_Aboubakar_Moïse_en.pdf">Anglais</a>
+  </div>
+</span>
 </div>
                     </div>
                 </div>
             </div>
         </section>
 
+ <section id="experience" class="reveal">
+            <div class="section-label">
+                <div class="section-title" data-cmd="# cat ./experience.log">EXPERIENCES</div>
+                <div class="section-id">#01</div>
+            </div>
+            <div class="experience-head">
+            <div class="timeline">
+                <article class="experience-card">
+                    <div class="experience-marker"><span></span></div>
+                    <div class="experience-logo"><span>BluSec</span></div>
+                    <div class="experience-body">
+                        <div class="experience-topline"><span class="experience-type">INTERNSHIP / STAGE</span><span class="experience-date"> Juillet - Septembre 2026 </span></div>
+                       <h3>Stagiaire Analyste SOC </h3>
+                        <p class="experience-role">Étude comparative des plateformes de gestion et d’automatisation des incidents pour l’optimisation des opérations d’un SOC</p>
+                        <p class="experience-desc">
+                            <ul class="skill-list">
+                        <li>Identification les besoins fonctionnels et techniques d’un SOC.</li>
+                        <li>Définition d'une grille d’évaluation pondérée.</li>
+            
+                            <li>Réalisations d'un benchmark documentaire et technique des solutions pertinentes.</li>
+                            <li>Installation et test de deux solutions accessibles en lab.</li>
+                            <li>Exécution d'un scénario simple de gestion d’incident.</li>
+                            <li>Production d'une analyse comparative et une recommandation finale.</li>
+                    </ul></p>
+                        <div class="experience-tags"><span>Open source SIEM</span><span>Adversary emulation</span><span>Incident Response platform</span><span>Automation</span>
+                        <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-marker"><span></span></div>
+                    <div class="experience-logo"><span>ANSI NIGER</span></div>
+                    <div class="experience-body">
+                        <div class="experience-topline"><span class="experience-type">INTERNSHIP / STAGE</span><span class="experience-date"> Août 2025 </span></div>
+                       <h3>Stage d'initiation</h3>
+                        <p class="experience-desc"><ul class="skill-list">
+                        <li>Participation à l’élaboration d’un Terme de Référence pour un projet de relocalisation d’un hotspot communautaire.</li>
+                        <li>Participation à la mise en place d'une solution de monitoring des postes de la salle de formation de l’ANSI.</li>
+                          <li>Participation à l'inventaire des équipements de l’ANSI.</li>
+                            <li>Rédaction d’un compte-rendu de réunion stratégique sur le portail public du Niger.</li>
+                    </ul></p>
+                        <div class="experience-tags"><span>Veyon Monitoring</span><span>Administration</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
         
         <section id="ops" class="reveal">
             <div class="section-label">
@@ -221,7 +271,7 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                     <span>100%</span>
                 </div>
                 <div class="progress-bar-bg">
-                    <div class="progress-bar-fill fill-progress" style="width: 100%"></div>
+                    <div class="progress-bar-fill fill-complete" style="width: 100%"></div>
                 </div>
             </div>
         </li>
@@ -246,7 +296,7 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
        
         <section id="certifications" class="reveal">
             <div class="section-label">
-                <div class="section-title" data-cmd="# ls -la ./certs/">CERTIFICATIONS</div>
+                <div class="section-title" data-cmd="# ls -la ./certs/">Certifications & Achievements</div>
                 <div class="section-id">#03</div>
             </div>
             <div class="cert-grid">
@@ -254,43 +304,48 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                     <div class="cert-issuer">TryHackMe</div>
                     <div class="cert-name">Pre-Security Path</div>
                     <div class="cert-date">Février 2026</div>
-                    <div class="cert-desc">Validation des fondamentaux en réseau, web et systèmes.</div>
-                    <div class="cert-badge">VERIFIED</div>
+   
+                   <a class="cert-badge" href="https://tryhackme.com/certificate/THM-C8KEONQI12" target="_blank" rel="noopener">VERIFY</a>
                 </div>
                 <div class="cert-card">
                     <div class="cert-issuer">Cisco</div>
                     <div class="cert-name">Networking Devices & Initial Configuration</div>
                     <div class="cert-date">Juin 2025</div>
-                    <div class="cert-desc">Comprehension des matériels réseaux et leurs configurations de base.</div>
-                    <div class="cert-badge">VERIFIED</div>
+            
+                    <a class="cert-badge" href="https://www.credly.com/badges/e7383064-8be8-41b5-829e-26adb5e73a7c/linked_in_profile" target="_blank" rel="noopener">VERIFY</a>
                 </div>
                 <div class="cert-card">
                     <div class="cert-issuer">Cisco</div>
                     <div class="cert-name">Introduction to Cybersecurity</div>
                     <div class="cert-date">Mars 2025</div>
-                    <div class="cert-desc">Comprehension des fondamentaux de la cybersécurité.</div>
-                    <div class="cert-badge">VERIFIED</div>
+         
+                  <a class="cert-badge" href="https://www.credly.com/badges/aba96f39-155c-4cf0-acad-71b1d505c7dc/linked_in_profile" target="_blank" rel="noopener">VERIFY</a>
                 </div>
                 <div class="cert-card">
                     <div class="cert-issuer">Cisco</div>
                     <div class="cert-name">Ethical Hacker</div>
                     <div class="cert-date">Avril 2026</div>
-                    <div class="cert-desc">Comprehension solide de la sécurité offensive.</div>
-                    <div class="cert-badge">VERIFIED</div>
+               
+                 <a class="cert-badge" href="https://www.credly.com/badges/e5fb8710-2bc6-4654-83d8-924824ffcfa6/linked_in_profile" target="_blank" rel="noopener">VERIFY</a>
                 </div>
                 <div class="cert-card">
                     <div class="cert-issuer">Cisco</div>
                     <div class="cert-name">Python Essential 1</div>
                     <div class="cert-date">Avril 2026</div>
-                    <div class="cert-desc">Concepts fondamentals du language de programmation python.</div>
-                    <div class="cert-badge">VERIFIED</div>
+            
+                 <a class="cert-badge" href="https://www.credly.com/badges/7e1ebe21-67df-4ca4-a3d5-c07f4e68b154/linked_in_profile" target="_blank" rel="noopener">VERIFY</a>
                 </div>
                 <div class="cert-card">
                     <div class="cert-issuer">Cisco</div>
                     <div class="cert-name">Networking Basic</div>
                     <div class="cert-date">Juillet 2026</div>
-                    <div class="cert-desc">Concepts fondamentals en réseaux.</div>
-                    <div class="cert-badge">VERIFIED</div>
+                    <a class="cert-badge" href="https://www.credly.com/badges/d3b49bab-5177-4976-9368-b999260cc442/linked_in_profile" target="_blank" rel="noopener">VERIFY</a>
+                </div>
+                 <div class="cert-card">
+                    <div class="cert-issuer">Packt</div>
+                    <div class="cert-name">Advanced Network Attacks, Web Hacking, and Cryptography</div>
+                    <div class="cert-date">Août 2026</div>
+                   <a class="cert-badge" href="https://www.coursera.org/account/accomplishments/verify/O3U7XO4J6V7X" target="_blank" rel="noopener">VERIFY</a>
                 </div>
             </div>
         </section>
@@ -312,6 +367,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">ISS</span>
                         <span class="tag">SysAdmin</span>
                     </div>
+                     <div class="project-links">
+                        <a href="https://www.linkedin.com/in/mo%C3%AFse-maman-aboubakar-432758275/overlay/Project/1385403704/treasury/?profileId=ACoAAEM1cWYBogDxsUS6829cPJgOTTg8hXHDWH4" class="project-repo" target="_blank"><i class="fa-solid fa-book-open-reader"></i>Report</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-num">PROJECT_02</div>
@@ -321,6 +379,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">Laravel</span>
                         <span class="tag">Blade</span>
                         <span class="tag">PHP</span>
+                    </div>
+                     <div class="project-links">
+                        <a href="https://github.com/MyStiCaaLz/forum" class="project-repo" target="_blank"><i class="fab fa-github"></i> Repository</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -332,6 +393,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">OSINT</span>
                         <span class="tag">Automation</span>
                     </div>
+                     <div class="project-links">
+                        <a href="https://github.com/MyStiCaaLz/InfoGat" class="project-repo" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-num">PROJECT_04</div>
@@ -341,6 +405,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">Python</span>
                         <span class="tag">Socket</span>
                         <span class="tag">Kali Linux</span>
+                    </div>
+                     <div class="project-links">
+                        <a href="https://github.com/MyStiCaaLz/EchoWebServer" class="project-repo" target="_blank"><i class="fab fa-github"></i> Repository</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -353,6 +420,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">Firewall</span>
                         <span class="tag">Sécurité des réseaux et systèmes</span>
                     </div>
+                     <div class="project-links">
+                        <a href="https://www.linkedin.com/in/mo%C3%AFse-maman-aboubakar-432758275/overlay/Project/596389830/treasury/?profileId=ACoAAEM1cWYBogDxsUS6829cPJgOTTg8hXHDWH4" class="project-repo" target="_blank"><i class="fa-solid fa-book-open-reader"></i> Report</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-num">PROJECT_06</div>
@@ -363,6 +433,9 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">assembleur</span>
                         <span class="tag">serveur web</span>
                     </div>
+                     <div class="project-links">
+                        <a href="https://github.com/MyStiCaaLz/Webby" class="project-repo" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-num">PROJECT_07</div>
@@ -372,23 +445,86 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <span class="tag">assembleur</span>
                         <span class="tag">serveur web</span>
                     </div>
+                     <div class="project-links">
+                        <a href="https://github.com/MyStiCaaLz/calculas" class="project-repo" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-       
-        <section id="github" class="github-section reveal">
-            <div class="section-label" style="justify-content:center;margin-bottom:2rem;">
-                <div class="section-title" data-cmd="# ssh git@github.com">GITHUB</div>
+  
+        <section id="stack" class="reveal">
+            <div class="section-label">
+                <div class="section-title" data-cmd="# cat ./security_stack.conf">SECURITY STACK</div>
                 <div class="section-id">#05</div>
             </div>
-            <div style="display:flex;justify-content:center;">
-                <div class="github-box">
-                    <div class="github-desc">Mon dépôt GitHub rassemble mes scripts, write-ups d'exploitation et projets de développement liés à la cybersécurité et autres.</div>
-                    <a href="https://github.com/MyStiCaaLz" target="_blank" class="cta-btn">
-                        → ÉTABLIR LA CONNEXION
-                    </a>
-                    <div style="margin-top:1.5rem;font-size:0.7rem;letter-spacing:2px;color:var(--dim);">PROTOCOL: SSH OVER HTTPS &nbsp;|&nbsp; STATUS: <span style="color:var(--green)">LISTENING</span></div>
+            <div class="stack-intro">
+                <div>
+            <div class="tool-category defensive">
+                <div class="tool-category-head">
+                    <div><span class="category-index">01</span><span class="category-name">DEFENSIVE SECURITY</span></div>
+                    <span class="category-status">[ BLUE TEAM / SOC / DFIR ]</span>
+                </div>
+                <div class="marquee-window">
+                    <div class="tool-track">
+                        <div class="tool-set">
+                            <a class="tool-card" href="https://wazuh.com/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/wazuh/00ff41" alt="Wazuh"><span>WZ</span></span><span class="tool-name">Wazuh</span><span class="tool-role">SIEM / XDR</span></a>
+                            <a class="tool-card" href="https://suricata.io/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/suricata/00ff41" alt="Suricata"><span>SU</span></span><span class="tool-name">Suricata</span><span class="tool-role">IDS / IPS</span></a>
+                            <a class="tool-card" href="https://www.pfsense.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/pfsense/00ff41" alt="pfSense"><span>PF</span></span><span class="tool-name">pfSense</span><span class="tool-role">Firewall</span></a>
+                            <a class="tool-card" href="https://n8n.io/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/n8n/00ff41" alt="n8n"><span>N8</span></span><span class="tool-name">n8n</span><span class="tool-role">Automation</span></a>
+                            <a class="tool-card" href="https://github.com/dfir-iris/iris-web" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/00ff41" alt="DFIR-IRIS"><span>DI</span></span><span class="tool-name">DFIR-IRIS</span><span class="tool-role">Case Management</span></a>
+                            <a class="tool-card" href="https://thehive-project.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/thehive/00ff41" alt="TheHive"><span>TH</span></span><span class="tool-name">TheHive</span><span class="tool-role">Incident Response</span></a>
+                            <a class="tool-card" href="https://www.cortex-project.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/thehive/00ff41" alt="Cortex"><span>CX</span></span><span class="tool-name">Cortex</span><span class="tool-role">Analyzers</span></a>
+                            <a class="tool-card" href="https://shuffler.io/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/shuffle/00ff41" alt="Shuffle"><span>SH</span></span><span class="tool-name">Shuffle</span><span class="tool-role">SOAR</span></a>
+                            <a class="tool-card" href="https://www.flowintel.com/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/flowintel/00ff41" alt="FlowIntel"><span>FI</span></span><span class="tool-name">FlowIntel</span><span class="tool-role">Threat Intel</span></a>
+                        </div>
+                        <div class="tool-set" aria-hidden="true">
+                            <a class="tool-card" href="https://wazuh.com/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/wazuh/00ff41" alt=""><span>WZ</span></span><span class="tool-name">Wazuh</span><span class="tool-role">SIEM / XDR</span></a>
+                            <a class="tool-card" href="https://suricata.io/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/suricata/00ff41" alt=""><span>SU</span></span><span class="tool-name">Suricata</span><span class="tool-role">IDS / IPS</span></a>
+                            <a class="tool-card" href="https://www.pfsense.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/pfsense/00ff41" alt=""><span>PF</span></span><span class="tool-name">pfSense</span><span class="tool-role">Firewall</span></a>
+                            <a class="tool-card" href="https://n8n.io/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/n8n/00ff41" alt=""><span>N8</span></span><span class="tool-name">n8n</span><span class="tool-role">Automation</span></a>
+                            <a class="tool-card" href="https://github.com/dfir-iris/iris-web"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/00ff41" alt=""><span>DI</span></span><span class="tool-name">DFIR-IRIS</span><span class="tool-role">Case Management</span></a>
+                            <a class="tool-card" href="https://thehive-project.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/thehive/00ff41" alt=""><span>TH</span></span><span class="tool-name">TheHive</span><span class="tool-role">Incident Response</span></a>
+                            <a class="tool-card" href="https://www.cortex-project.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/thehive/00ff41" alt=""><span>CX</span></span><span class="tool-name">Cortex</span><span class="tool-role">Analyzers</span></a>
+                            <a class="tool-card" href="https://shuffler.io/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/shuffle/00ff41" alt=""><span>SH</span></span><span class="tool-name">Shuffle</span><span class="tool-role">SOAR</span></a>
+                            <a class="tool-card" href="https://www.flowintel.com/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/flowintel/00ff41" alt=""><span>FI</span></span><span class="tool-name">FlowIntel</span><span class="tool-role">Threat Intel</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-category offensive">
+                <div class="tool-category-head">
+                    <div><span class="category-index">02</span><span class="category-name">OFFENSIVE SECURITY</span></div>
+                    <span class="category-status">[ RED TEAM / RE / APPSEC ]</span>
+                </div>
+                <div class="marquee-window">
+                    <div class="tool-track reverse">
+                        <div class="tool-set">
+                            <a class="tool-card" href="https://www.metasploit.com/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/metasploit/ff2244" alt="Metasploit"><span>MS</span></span><span class="tool-name">Metasploit</span><span class="tool-role">Exploitation</span></a>
+                            <a class="tool-card" href="https://github.com/projectdiscovery/nuclei" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/nuclei/ff2244" alt="Nuclei"><span>NU</span></span><span class="tool-name">Nuclei</span><span class="tool-role">Scanning</span></a>
+                            <a class="tool-card" href="https://github.com/mitre/caldera" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/mitre/ff2244" alt="Caldera"><span>CA</span></span><span class="tool-name">Caldera</span><span class="tool-role">Adversary Emulation</span></a>
+                            <a class="tool-card" href="https://ghidra-sre.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/ghidra/ff2244" alt="Ghidra"><span>GH</span></span><span class="tool-name">Ghidra</span><span class="tool-role">Reverse Engineering</span></a>
+                            <a class="tool-card" href="https://github.com/sullo/nikto" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/ff2244" alt="Nikto"><span>NI</span></span><span class="tool-name">Nikto</span><span class="tool-role">Web Scanner</span></a>
+                            <a class="tool-card" href="https://www.greenbone.net/en/community-edition/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/greenbone/ff2244" alt="OpenVAS"><span>OV</span></span><span class="tool-name">OpenVAS</span><span class="tool-role">Vulnerability Mgmt</span></a>
+                            <a class="tool-card" href="https://hashcat.net/hashcat/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/hashcat/ff2244" alt="Hashcat"><span>HC</span></span><span class="tool-name">Hashcat</span><span class="tool-role">Password Recovery</span></a>
+                            <a class="tool-card" href="https://www.openwall.com/john/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/openwall/ff2244" alt="John the Ripper"><span>JR</span></span><span class="tool-name">John the Ripper</span><span class="tool-role">Password Cracking</span></a>
+                            <a class="tool-card" href="https://www.ettercap-project.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/ettercap/ff2244" alt="Ettercap"><span>ET</span></span><span class="tool-name">Ettercap</span><span class="tool-role">MITM</span></a>
+                            <a class="tool-card" href="https://www.wireshark.org/" target="_blank" rel="noopener"><span class="tool-logo"><img src="https://cdn.simpleicons.org/wireshark/ff2244" alt="Wireshark"><span>WS</span></span><span class="tool-name">Wireshark</span><span class="tool-role">Packet Analysis</span></a>
+                        </div>
+                        <div class="tool-set" aria-hidden="true">
+                            <a class="tool-card" href="https://www.metasploit.com/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/metasploit/ff2244" alt=""><span>MS</span></span><span class="tool-name">Metasploit</span><span class="tool-role">Exploitation</span></a>
+                            <a class="tool-card" href="https://github.com/projectdiscovery/nuclei"><span class="tool-logo"><img src="https://cdn.simpleicons.org/nuclei/ff2244" alt=""><span>NU</span></span><span class="tool-name">Nuclei</span><span class="tool-role">Scanning</span></a>
+                            <a class="tool-card" href="https://github.com/mitre/caldera"><span class="tool-logo"><img src="https://cdn.simpleicons.org/mitre/ff2244" alt=""><span>CA</span></span><span class="tool-name">Caldera</span><span class="tool-role">Adversary Emulation</span></a>
+                            <a class="tool-card" href="https://ghidra-sre.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/ghidra/ff2244" alt=""><span>GH</span></span><span class="tool-name">Ghidra</span><span class="tool-role">Reverse Engineering</span></a>
+                            <a class="tool-card" href="https://github.com/sullo/nikto"><span class="tool-logo"><img src="https://cdn.simpleicons.org/github/ff2244" alt=""><span>NI</span></span><span class="tool-name">Nikto</span><span class="tool-role">Web Scanner</span></a>
+                            <a class="tool-card" href="https://www.greenbone.net/en/community-edition/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/greenbone/ff2244" alt=""><span>OV</span></span><span class="tool-name">OpenVAS</span><span class="tool-role">Vulnerability Mgmt</span></a>
+                            <a class="tool-card" href="https://hashcat.net/hashcat/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/hashcat/ff2244" alt=""><span>HC</span></span><span class="tool-name">Hashcat</span><span class="tool-role">Password Recovery</span></a>
+                            <a class="tool-card" href="https://www.openwall.com/john/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/openwall/ff2244" alt=""><span>JR</span></span><span class="tool-name">John the Ripper</span><span class="tool-role">Password Cracking</span></a>
+                            <a class="tool-card" href="https://www.ettercap-project.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/ettercap/ff2244" alt=""><span>ET</span></span><span class="tool-name">Ettercap</span><span class="tool-role">MITM</span></a>
+                            <a class="tool-card" href="https://www.wireshark.org/"><span class="tool-logo"><img src="https://cdn.simpleicons.org/wireshark/ff2244" alt=""><span>WS</span></span><span class="tool-name">Wireshark</span><span class="tool-role">Packet Analysis</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -477,15 +613,55 @@ function runBoot() {
 runBoot();
 
 
-const titleText = 'MyS_tiCaaLz';
-let tIdx = 0;
+const titles = ['MyS_tiCaaLz', 'i use fedora btw :)'];
+let textIdx = 0;
+let charIdx = 0;
+let isDeleting = false;
+let loopCount = 0; 
+
 const titleEl = document.getElementById('typewriter-title');
+
 function typeTitle() {
-    if (tIdx < titleText.length) {
-        titleEl.textContent += titleText[tIdx++];
-        setTimeout(typeTitle, 80);
+    const currentText = titles[textIdx];
+
+    if (isDeleting) {
+        titleEl.textContent = currentText.substring(0, charIdx - 1);
+        charIdx--;
+    } else {
+        titleEl.textContent = currentText.substring(0, charIdx + 1);
+        charIdx++;
     }
+
+    let speed = isDeleting ? 40 : 80;
+
+    if (!isDeleting && charIdx === currentText.length) {
+        
+        if (textIdx === 0 && loopCount > 0) {
+            return; 
+        }
+
+        speed = 1000;
+        isDeleting = true;
+    } 
+    
+    else if (isDeleting && charIdx === 0) {
+        isDeleting = false;
+        textIdx++;
+
+        
+        if (textIdx >= titles.length) {
+            textIdx = 0;
+            loopCount++;
+        }
+
+        speed = 4000; 
+    }
+
+    setTimeout(typeTitle, speed);
 }
+
+
+typeTitle();
 
 function updateTime() {
     const now = new Date();
@@ -532,6 +708,34 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.addEventListener("DOMContentLoaded", () => {
+
+    const toolTracks = document.querySelectorAll(".tools-track");
+
+    toolTracks.forEach((track) => {
+
+   
+        const originalItems = Array.from(track.children);
+
+        originalItems.forEach((item) => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute("aria-hidden", "true");
+            track.appendChild(clone);
+        });
+
+      
+        const trackWidth = track.scrollWidth / 2;
+
+        const pixelsPerSecond = track.classList.contains("offensive-track")
+            ? 75
+            : 70;
+
+        const duration = trackWidth / pixelsPerSecond;
+
+        track.style.animationDuration = `${duration}s`;
+    });
+
+});
 </script>
 </body>
 </html>
