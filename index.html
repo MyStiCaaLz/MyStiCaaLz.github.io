@@ -44,10 +44,11 @@
         </div>
         <nav>
             <a href="#profil" class="nav-link">01 WHOAMI</a>
-            <a href="#ops" class="nav-link">02 LABS & TRAINING</a>
-            <a href="#certifications" class="nav-link">03 CERTS & ACHS</a>
-            <a href="#projects" class="nav-link">04 PROJECTS</a>
-            <a href="#stack" class="nav-link">05 Sec Stack</a>
+            <a href="#experience" class="nav-link">02 Experiences</a>
+            <a href="#ops" class="nav-link">03 LABS & TRAINING</a>
+            <a href="#certifications" class="nav-link">04 CERTS & ACHS</a>
+            <a href="#projects" class="nav-link">05 PROJECTS</a>
+            <a href="#stack" class="nav-link">06 Sec Stack</a>
         </nav>
     </header>
 
@@ -64,7 +65,7 @@
                 </div>
                 <div class="profile-text">
                     <p>"Hello Hacker" ! Moi c'est <strong>Moïse Maman Aboubakar</strong>, actuellement en 3ème année de cycle d'ingénieur 
-                        en Sécurité Information Technologie, j'essaye de développer une expertise hybride alliant 
+                        en Sécurité Information Technologie à la faculté des Sciences et Techniques de Marrakech, j'essaye de développer une expertise hybride alliant 
                         sécurité <span class="highlight-red">offensive</span> et <span class="highlight-cyan">défensive</span> 
                         des systèmes. Je m'interesse à l'administration système et réseaux sous linux, la programmation en python, le bash scripting et les réseaux, je consacre mon temps libre à relever les défis
                          pour maîtriser le reverse engineering ainsi que le binary exploitation. 
@@ -170,7 +171,7 @@ sBJ2O4NMqtOU7JGmwq5dJ1jyM3CvAmxGQtENtAJAT4Qd9V9hhjjevMFw1TCOmrk2
                         <p class="experience-role">Étude comparative des plateformes de gestion et d’automatisation des incidents pour l’optimisation des opérations d’un SOC</p>
                         <p class="experience-desc">
                             <ul class="skill-list">
-                        <li>Identification les besoins fonctionnels et techniques d’un SOC.</li>
+                        <li>Identification des besoins fonctionnels et techniques d’un SOC.</li>
                         <li>Définition d'une grille d’évaluation pondérée.</li>
             
                             <li>Réalisations d'un benchmark documentaire et technique des solutions pertinentes.</li>
@@ -674,10 +675,40 @@ updateTime();
 
 
 const btn = document.getElementById('back-to-top');
+const nav = document.querySelector('header nav');
+const header = document.querySelector('header');
+
+function updateNavOnScroll() {
+    if (!nav || !header) return;
+
+    const isScrolled = window.scrollY > 10;
+
+    nav.classList.toggle('nav-scrolled', isScrolled);
+}
+
+window.addEventListener('scroll', updateNavOnScroll, { passive: true });
+updateNavOnScroll();
+
 window.addEventListener('scroll', () => {
     btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
 });
 
+
+
+// Sticky navigation: the nav keeps its original place at the top,
+// then becomes sticky with a green border once the page starts scrolling.
+const siteNav = document.querySelector('header nav');
+
+if (siteNav) {
+    const navStart = siteNav.getBoundingClientRect().top + window.scrollY;
+
+    const updateNavState = () => {
+        siteNav.classList.toggle('nav-scrolled', window.scrollY > navStart);
+    };
+
+    window.addEventListener('scroll', updateNavState, { passive: true });
+    updateNavState();
+}
 
 const copyBtn = document.getElementById('copy-key-btn');
 if (copyBtn) {
